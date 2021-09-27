@@ -14,7 +14,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/order?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai" />
 	 	<property name="username" value="root" />
-        <property name="password" value="12345678" />
+        <property name="password" value="VioletTest^$0401" />
 	</bean>
 
 	<!-- 数据会话工厂：映射模型包-->

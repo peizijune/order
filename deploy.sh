@@ -12,16 +12,17 @@
 killTomcat()
 {
     pid =`ps -ef|grep tomcat|grep java|awk '{print $2}'`
-    echo "tomcat PID list: $pid"
     if [ "$pid" = "" ]
     then
-      echo "no tomcat PID alive"
+      echo "no tomcat running"
     else
       kill -9 $pid
+      echo "kill tomcat: $pid"
     fi
 }
 
 # 进入项目目录
+echo "project path: $PROJ_PATH"
 cd $PROJ_PATH/order
 # maven打包到本地仓库
 mvn clean install
